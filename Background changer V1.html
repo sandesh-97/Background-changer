@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> background changer </title>
+
+    <style>   
+
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border : solid black 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        
+        }
+                                    
+        #white{
+            background-color: white;  
+               
+            
+
+        }
+
+        #aqua{
+            background-color: aquamarine;
+
+        }
+
+        #violet{
+            background-color: #ce9aff;
+
+
+        }
+
+        #black{
+
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua"  onclick="changeBG('#7fffd4')"></span> 
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span> 
+        <span class="btn" id="black"  onclick="changeBG('#000000')"></span>
+    </div>
+
+    <h1 class="text"> About us </h1>
+        <img src=" https://www.iexindia.com/pdf/IEX_Logo_RGB_2.JPG" alt="">
+
+    <p class="text">
+        Indian Energy Exchange is a Power Exchange, licensed by the Central Electricity Regulatory Commission (CERC) for spot trading in power / electricity and trading of Renewal Energy Certificate (REC) and Energy Saving Certificates (ESCerts). The main activity of the company is to provide an automated platform and infrastructure for carrying out trading in electricity units for physical delivery of electricity.(Source : 202003-01 Annual Report Page No:139)
+
+        KEY POINTS [ edit ]
+        India’s 1st Energy Exchange[1]-
+        IEX is the first and largest energy exchange in India providing a nationwide, automated trading platform for physical delivery of electricity. The exchange platform enables efficient price discovery and increases the accessibility and transparency of the power market in India while also enhancing the speed and efficiency of trade execution.
+        
+        Market participants[2]
+        IEX has 6700+ registered participants from 29 States, 5 Union Territories (UTs). Over 4,800 registered participants were eligible to trade electricity contracts and over 4,400 registered participants were eligible to trade RECs, as of Feb 2020. Out of participants registered to trade electricity contracts include 56 distribution companies, over 500 electricity generators, and over 4,200 open access consumers
+        
+        Product segments: [1]
+        Day Ahead Market (DAM) – IEX allows its participants to transact electricity on a 15-minutes block basis, a day prior to the delivery of electricity. The buyers and sellers submit their bids electronically and Iex matches the bids on double-sided auction mechanism with a uniform market clearing price.
+        
+        Term Ahead Market (TAM) range for buying/selling electricity for a duration of up to 11 days. It enables participants to purchase electricity for the same day through intra-day contracts, for the next day through day-ahead contingency, on daily basis for rolling seven days through daily contracts,
+        
+        Renewable Energy certificate (Rec) - Rec market facilitates transaction in environmental attributes. The Renewable Energy (RE) generator can opt to get RECs against the green attributes of their generation. These generators can sell RECs through the exchange.
+        
+        Energy Saving certificates (Eserts) ESCerts are the tradable certificates under the Perform, Achieve, Trade Scheme of Bureau of Energy Efficiency, a market-based mechanism to incentivize energy efficiency in large energy-intensive industries.
+        
+        Monopoly status[3]
+        There are two energy exchanges in India, IEX and PXIL are the two exchanges where electricity is traded and IEX enjoys a market share of more than 95%.
+        
+        Key statistics[4]
+        The daily average traded volume is 134 Million units in FY20 and a total of 53.8 billion Units of electricity traded in the FY20. More than 4200+ commercial and industrial consumers across India representing varied industry sectors such as textiles, metals, chemicals, automobiles, home products, food, cement, institutions, commercial consumers, etc, leverage the day-ahead market on Exchange platform to buy low priced power and the company witnessed a 30% YoY in the procurement of power the commercial sector.
+        
+        Launch of Indian Gas Exchange [5]
+        IEX launched the first gas exchange in India on June 20 and this will be India’s first automated national-level trading platform for physical delivery of natural gas. It is also working on modalities related to the potential formation of a coal exchange
+        
+        Growth strategy[6]
+        IEX is steadily investing in technology and deepening the power market through new products such as Real-Time Market (RTM) IEX is expected to launch some new products like Long-Duration Contracts, Cross Border Trade, Green TAM and DAM, Exchange-based ancillary market.
+        
+        Regulatory Issues: [7]. The implementation of the market coupling will enable the buyer/seller to match their order both the exchanges and this would challenge the IEX’s domination in the segment.
+
+    </p>
+
+    <script>
+
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                    for(let elm of txt){
+                elm.style.color = "black";
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
